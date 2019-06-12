@@ -3,6 +3,7 @@ league_builder.py
 @Author - Kellen Rice
 Taking in a text file, or plain text from stdin create a soccer league
 table and print the results.
+v. 0.0.1
 """
 
 from League import League

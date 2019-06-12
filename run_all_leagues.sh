@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for f in sample-input.txt empty.txt another-test.txt ties.txt;
+for f in ./input_files/*;
 do
     echo "New Test $f"
     echo "argument"

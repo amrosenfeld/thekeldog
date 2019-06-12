@@ -1,9 +1,13 @@
+"""Test file for testing League.py"""
+
 import pytest
 from League import League
 
 
 def test_sample_input(monkeypatch, capsys):
-    monkeypatch.setattr('sys.stdin', open('sample-input.txt'))
+    """Test sample text given in challenge prompt"""
+
+    monkeypatch.setattr('sys.stdin', open('./input_files/sample-input.txt'))
     league = League()
     league.get_matches()
     league.fill_league()
@@ -14,7 +18,9 @@ def test_sample_input(monkeypatch, capsys):
 
 
 def test_empty_input(monkeypatch, capsys):
-    monkeypatch.setattr('sys.stdin', open('empty.txt'))
+    """Test when receiving input from an empty file"""
+
+    monkeypatch.setattr('sys.stdin', open('./input_files/empty.txt'))
     league = League()
     league.get_matches()
     league.fill_league()
@@ -24,7 +30,9 @@ def test_empty_input(monkeypatch, capsys):
 
 
 def test_all_tied_input(monkeypatch, capsys):
-    monkeypatch.setattr('sys.stdin', open('ties.txt'))
+    """Test output when all teams have equal points"""
+
+    monkeypatch.setattr('sys.stdin', open('./input_files/ties.txt'))
     league = League()
     league.get_matches()
     league.fill_league()
@@ -34,7 +42,9 @@ def test_all_tied_input(monkeypatch, capsys):
 
 
 def test_another_league(monkeypatch, capsys):
-    monkeypatch.setattr('sys.stdin', open('another-test.txt'))
+    """Test output from a different set of league/game data"""
+
+    monkeypatch.setattr('sys.stdin', open('./input_files/another-test.txt'))
     league = League()
     league.get_matches()
     league.fill_league()
