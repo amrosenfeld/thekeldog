@@ -22,10 +22,12 @@ as `stdin` redirects AND as command line arguments.
 #### Note:
 If at first `run_all_leagues.sh` does not run correctly, please check the filepath at the top
 of the file following the `#!` to ensure bash is being referenced correctly.
+Permissions may also need to be granted via command `chmod 7xx run_all_leagues.sh`
 
 `league_builder.py` can of course be run on it's own with an input file provided
 either as `stdin` with file redirect operator i.e. `python3 league_builder.py < sample-input.txt`
 or as a command line argument i.e. `python3 league_builder.py sample-input.txt`
 
 ### Platform support
-This program should run on all Linux/Unix compatible systems. 
+This program should run on all Linux/Unix compatible systems.
+Tested on both Windows bash and Mac/OS

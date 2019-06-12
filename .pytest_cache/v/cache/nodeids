@@ -1,0 +1,6 @@
+[
+  "league_test.py::test_sample_input",
+  "league_test.py::test_empty_input",
+  "league_test.py::test_all_tied_input",
+  "league_test.py::test_another_league"
+]
