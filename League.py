@@ -42,6 +42,8 @@ class League:
                 self.matches = [f.strip() for f in file]
         else:
             self.matches = [line.strip() for line in sys.stdin]
+        #print('matches: ')
+        #print(self.matches)
 
     def print_table(self):
         """Print the formatted league table from sorted table list
@@ -95,8 +97,8 @@ class League:
         for match in self.matches:
             teams = match.split(',')
             # Some teams have two names, split on space once from the right
-            home = teams[0].strip().rsplit(' ', maxsplit=1)
-            away = teams[1].strip().rsplit(' ', maxsplit=1)
+            home = teams[0].strip().rsplit(' ', 1)
+            away = teams[1].strip().rsplit(' ', 1)
             # Check/populate teams dict with new teams
             if home[0] not in self.teams:
                 self.teams[home[0]] = 0

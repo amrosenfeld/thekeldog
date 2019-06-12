@@ -1,0 +1,5 @@
+Man Utd 3, Arsenal 0
+Arsenal 1, Chelsea 0
+Chelsea 1, Man City 1
+Man Utd 3, Man City 1
+Chelsea 4, Man Utd 5
