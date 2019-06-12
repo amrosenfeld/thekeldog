@@ -1,3 +1,11 @@
+"""
+League.py - Defines a league class that will be used to convert match data
+to league standings table
+@Author - Kellen Rice
+Version 0.0.1
+"""
+
+
 import sys
 
 
