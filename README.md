@@ -16,6 +16,7 @@ There is currently a `run_all_leagues.sh` file in the directory. When run,
 this file will run `league_builder.py` on all the current input files in the directory
 as `stdin` redirects AND as command line arguments.
 
+#### Testing
 `run_all_leagues.sh` will then install the required unit testing package `pytest` via
 `pip install` and then run `pytest`. 
 
