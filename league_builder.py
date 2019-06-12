@@ -11,14 +11,14 @@ from League import League
 # To be filled once input source is determined
 all_matches = []
 
-# Input will come from stdin
+# Input will come from stdin or file from command line
 if len(sys.argv) > 1:
-    print('file provided in argument: ' + sys.argv[1])
+    # print('file provided in argument: ' + sys.argv[1])
     input_file = sys.argv[1]
     with open(input_file, 'r') as file:
         all_matches = [f.strip() for f in file]
 else:
-    print('stdin case!')
+    # print('stdin case!')
     all_matches = [line.strip() for line in sys.stdin]
 
 league = League()
