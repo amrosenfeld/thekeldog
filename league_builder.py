@@ -1,15 +1,12 @@
-'''
+"""
 league_builder.py
 @Author - Kellen Rice
 Taking in a text file, or plain text from stdin create a soccer league
 table and print the results.
-'''
+"""
 
-
-import os
-import re
 import sys
-import League
+from League import League
 
 # To be filled once input source is determined
 all_matches = []
@@ -24,8 +21,7 @@ else:
     print('stdin case!')
     all_matches = [line.strip() for line in sys.stdin]
 
-print(all_matches)
-
-
-
+league = League()
+league.fill_league(all_matches)
+league.print_table()
 
